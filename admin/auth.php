@@ -7,5 +7,5 @@ session_start();
 require __DIR__ . '/../lib/helpers.php';
 
 if (empty($_SESSION['admin_logged'])) {
-    redirect('login.php');
+    redirect(baseUrl('admin/login.php'));
 }

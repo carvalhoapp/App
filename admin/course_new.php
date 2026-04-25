@@ -14,7 +14,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         'description' => trim((string) ($_POST['description'] ?? '')),
         'price' => (float) ($_POST['price'] ?? 0),
     ]);
-    redirect('index.php');
+    redirect(baseUrl('admin/index.php'));
 }
 
 $pageTitle = 'Novo curso';
