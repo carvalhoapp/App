@@ -9,7 +9,7 @@ require __DIR__ . '/../lib/helpers.php';
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $up = $pdo->prepare('UPDATE settings SET whatsapp_number = :whatsapp WHERE id = 1');
     $up->execute(['whatsapp' => trim((string) ($_POST['whatsapp_number'] ?? ''))]);
-    redirect('settings.php?saved=1');
+    redirect(baseUrl('admin/settings.php?saved=1'));
 }
 
 $settings = $pdo->query('SELECT * FROM settings WHERE id = 1')->fetch();

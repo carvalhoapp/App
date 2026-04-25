@@ -3,6 +3,7 @@
 declare(strict_types=1);
 
 session_start();
+require __DIR__ . '/../lib/helpers.php';
+
 session_destroy();
-header('Location: login.php');
-exit;
+redirect(baseUrl('admin/login.php'));

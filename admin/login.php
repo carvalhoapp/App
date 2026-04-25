@@ -14,7 +14,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     if ($username === $config['admin']['username'] && $password === $config['admin']['password']) {
         $_SESSION['admin_logged'] = true;
-        redirect('index.php');
+        redirect(baseUrl('admin/index.php'));
     }
 
     $error = 'Usuário ou senha inválidos.';

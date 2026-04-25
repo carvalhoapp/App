@@ -33,7 +33,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             'sort_order' => (int) ($_POST['sort_order'] ?? 0),
         ]);
     }
-    redirect('fields.php?course_id=' . $courseId);
+    redirect(baseUrl('admin/fields.php?course_id=' . $courseId));
 }
 
 $fieldsStmt = $pdo->prepare('SELECT * FROM course_extra_fields WHERE course_id = :course_id ORDER BY sort_order ASC, id ASC');
