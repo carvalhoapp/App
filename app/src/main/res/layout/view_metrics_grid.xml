@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:columnCount="2"
+    android:rowCount="3"
+    android:background="#FFFFFF"
+    android:padding="8dp">
+
+    <TextView android:text="Speed" />
+    <TextView android:text="Distance" />
+    <TextView android:id="@+id/tvSpeedValue" android:textSize="42sp" android:textStyle="bold" />
+    <TextView android:id="@+id/tvDistanceValue" android:textSize="42sp" android:textStyle="bold" />
+
+    <TextView android:text="Avg Speed" />
+    <TextView android:text="Heart Rate" />
+    <TextView android:id="@+id/tvAvgSpeedValue" android:textSize="42sp" android:textStyle="bold" />
+    <TextView android:id="@+id/tvHeartValue" android:textSize="42sp" android:textStyle="bold" />
+
+    <TextView android:text="Altitude" />
+    <TextView android:text="Progresso (%)" />
+    <TextView android:id="@+id/tvAltitudeValue" android:textSize="42sp" android:textStyle="bold" />
+    <TextView android:id="@+id/tvGradeValue" android:textSize="42sp" android:textStyle="bold" />
+</GridLayout>
