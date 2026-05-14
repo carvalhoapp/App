@@ -25,11 +25,11 @@ class MainActivity : AppCompatActivity() {
         binding.tvAvgSpeedValue.text = formatOneDecimal(state.velocidadeMediaKmh)
         binding.tvHeartValue.text = state.batimentosBpm?.toString() ?: "--"
         binding.tvAltitudeValue.text = formatNoDecimals(state.altitudeMetros)
-        binding.tvGradeValue.text = formatOneDecimal(state.progressoRotaPercentual)
+        binding.tvGradeValue.text = formatOneDecimal(state.inclinacaoPercentual)
         binding.tvRouteInfo.text = getString(
             R.string.route_remaining_km,
             formatTwoDecimals(state.distanciaRestanteKm)
-        )
+        ) + " | Progresso: " + formatOneDecimal(state.progressoRotaPercentual) + "%"
         binding.tvTurnAlert.text = state.proximaCurva ?: getString(R.string.no_turn_alert)
     }
 
