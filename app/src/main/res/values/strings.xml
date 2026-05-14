@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Trivo GPS</string>
+    <string name="route_remaining_km">Rota: %1$s km restantes</string>
+    <string name="turn_alert_left_200m">↰ Curva leve à esquerda em 200 m</string>
+    <string name="no_turn_alert">Sem alerta de curva</string>
+</resources>
